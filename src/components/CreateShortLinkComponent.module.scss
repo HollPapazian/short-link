@@ -1,0 +1,51 @@
+.create-link-container {
+  display: flex;
+  gap: 1rem;
+  margin-top: 100px;
+  justify-content: center;
+  align-items: center;
+  font-family: Rubik;
+  flex-direction: column;
+  & form {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    & > div {
+      width: 80%;
+    }
+    & button {
+      width: max-content;
+      min-width: max-content;
+      font-family: Rubik;
+    }
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+      width: 90%;
+      & > div {
+        width: 100%;
+      }
+    }
+  }
+  & img {
+    width: 300px;
+  }
+  & h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    @media screen and (max-width: 600px) {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.short-link-container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  & a {
+    text-decoration: none;
+  }
+}
